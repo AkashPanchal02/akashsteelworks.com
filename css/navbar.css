@@ -1,0 +1,196 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Lobster&family=Montserrat:ital,wght@0,300;0,400;0,500;0,600;1,300;1,400;1,500');
+
+
+/* ============== Navbar Scrolling Effects ========================= */
+
+/* nav{
+    top: 0;
+    position: sticky;
+} */
+
+
+nav{
+    height: 7rem;
+    /* background: #000; */
+    /* color: #fff; */
+    transition: all 0.4s ease;
+}
+
+
+
+nav .align-bottom #akashSteel{
+    font-size: 23px;
+}
+
+.scrolling-active{
+    background-color: #000;
+    box-shadow: 0 0 2.5rem rgba(0, 0, 0, 0.5);
+    height: 5rem;
+}
+
+/* ============== End of Navbar Scrolling Effects ========================= */
+
+
+nav ul li{
+    text-transform: uppercase;
+    letter-spacing: 0.1rem;
+}
+
+
+/* Navigation animated work */
+
+nav ul li a{
+    position: relative;
+}
+
+nav ul li a:before{
+    content: "";
+    position: absolute;
+    left: 5%;
+    right: 0;
+    top: 82%;
+    width: 0;
+    height: 2px;
+    background-color: #fff;
+    transition: all 0.4s linear;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
+
+
+nav ul li a:hover:before{
+    width: 90%;
+}
+
+
+
+nav ul li .active:after{
+    content: "";
+    position: absolute;
+    height: 2px;
+    width: 100%;
+    background-color: #fff;
+    left: 0;
+    bottom: 13%;
+    border-top-left-radius: 2px;
+    border-top-right-radius: 2px;
+    border-bottom-left-radius: 2px;
+    border-bottom-right-radius: 2px;
+    animation: appear 0.5s linear;
+}
+
+@keyframes appear{
+    from{
+        width: 0;
+    }
+    to{
+        width: 100%;
+    }
+}
+
+
+
+/* ============================= Off canvas ============================= */
+
+
+.offcanvas-body a{
+    letter-spacing: 0.15rem;
+}
+
+.offcanvas-body li a,
+.offcanvas-body .dropdown a{
+    color: white;
+}
+
+.offcanvas-body li a:hover{
+    color: aqua;
+}
+
+.offcanvas-body .dropdown-menu a:hover{
+    color: black;
+}
+
+
+
+/* End of Navigation animated work */
+
+
+/* ==============================  FOOTER ================================== */
+
+
+.community-icons a i{
+    padding: 0 0.3rem;
+    color: #fff;
+}
+
+.community-icons a i:hover{
+    color: grey;
+}
+
+
+
+/* ================================  MEDIA QUERIES ================================== */
+
+
+@media (max-width:991px){
+    .offcanvas{
+        position: fixed;
+        width: 100%;
+    }
+
+    .offcanvas-body ul{
+        padding-top: 10rem;
+    }
+}
+
+@media (min-width:991px){
+    .offcanvas{
+        display: none;
+    }
+}
+
+
+@media (max-width:992px){
+    
+    .scrolling-active{
+        height: 6rem;
+    }
+}
+
+@media (max-width:350px){
+    nav a img{
+        width: 150px
+    }
+} 
+
+
+
+/* Responsiveness for logo2 */
+/* 
+@media (max-width:400px){
+    
+    nav a img{
+        width: 250px;
+    }
+}
+
+
+@media (max-width:350px){
+    nav a img{
+        width: 220px;
+
+    }
+}
+
+
+@media (max-width:320px){
+    nav a img{
+        width: 182px;
+    }
+} */
+
+/* End of Responsiveness for logo2 */
+

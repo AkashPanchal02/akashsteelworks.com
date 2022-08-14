@@ -1,0 +1,426 @@
+
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/navbar.css">
+    <link rel="stylesheet" href="/css/button.css">
+    <link rel="stylesheet" href="/css/index.css">
+
+    <script src="https://kit.fontawesome.com/09c8e3fb5e.js" crossorigin="anonymous"></script>
+    <script src="https://kit.fontawesome.com/8ba0677d09.js" crossorigin="anonymous"></script>
+
+    <title>Home || Akash Steel Works </title>
+  </head>
+  <body>
+        <nav class="py-3 navbar navbar-expand-lg navbar-dark fixed-top">
+        <div class="container" id="navbarSupport">
+            <a class="navbar-brand" href="/index.html"><img src="/images/logo.png" width="220" alt=""></a>
+            <h2 class="align-bottom" style="margin-left:-18px; display:none"><a class="align-bottom" href="/index.html" id="akashSteel"
+                    style="color:#fff; text-decoration:none">Akash Steel Works</a></h2>
+                  
+            <button class="navbar-toggler h-100" type="button" data-bs-toggle="offcanvas"
+                data-bs-target="#offcanvasExample" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse text-center" id="navbarSupportedContent">
+                <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                    <li class="nav-item mx-3"><a class="nav-link active" aria-current="page" href="/index.html"> Home </a></li>
+                    <li class="nav-item mx-3"><a class="nav-link" aria-current="page" href="/about-us.html"> About Us </a></li> 
+                    <li class="nav-item mx-3"><a class="nav-link" aria-current="page" href="/products.html"> Our Products </a></li>
+                    <li class="nav-item mx-3"><a class="nav-link" aria-current="page" href="/contact-us.html"> Contact Us </a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+
+    <div class="offcanvas offcanvas-start" data-bs-backdrop="false" data-bs-scroll="true" tabindex="-1"
+        id="offcanvasExample" aria-labelledby="offcanvasExampleLabel">
+        <div class="offcanvas-header" style="background:#000;">
+            <h5 class="offcanvas-title" id="offcanvasExampleLabel"><a class="text-white navbar-brand" href="/index.html">
+                <img src="/images/logo.png" class="align-center" width="200" alt=""></a>
+            </h5>
+            <button type="button" class="btn-close btn-close-white text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+        </div>
+        
+        <div class="offcanvas-body" style="background:rgb(0,0,0)">
+            <ul class="navbar-nav ms-auto mb-2 mb-lg-0 text-uppercase text-center"
+                style="font-family: Arial, Helvetica, sans-serif">
+                <li class="nav-item mx-3"> <a class="nav-link active" aria-current="page" href="/index.html"> Home </a> </li>
+                <li> <hr> </li>
+
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle dropdown-backdrop" href="/products.html" role="button" data-bs-toggle="dropdown" aria-expanded="false"> Our Products </a>
+                    <ul class="dropdown-menu" aria-labelledby="navbarDropdown" style="background:rgb(22,22,22); padding:0px">
+                        <li> <hr> </li>
+                        <li><a class="dropdown-item" href="/ss_front_railings.html">Stainless Steel Balcony Railings</a></li>
+                        <li><a class="dropdown-item" href="/ss_gates.html">Stainless Steel Gates</a></li>
+                        <li><a class="dropdown-item" href="/ss_stairs_railings.html">Stainless Steel Staircase Railings</a></li>
+                        <li><a class="dropdown-item" href="/ss_doors.html">Stainless Steel Doors</a></li>
+                        <li> <hr> </li>
+                    </ul>
+                </li>
+                <li> <hr> </li>  
+                <li class="nav-item mx-3"> <a class="nav-link" aria-current="page" href="/about-us.html"> About Us </a> </li>
+                <li> <hr> </li>
+                <li class="nav-item mx-3"> <a class="nav-link" aria-current="page" href="/contact-us.html"> Contact Us </a> </li>
+            </ul>
+        </div>
+    </div>
+
+    <!-- Script for navbar active buttons -->
+
+    <script>
+        const activePage = window.location.pathname;
+        const navLinks = document.querySelectorAll('nav a').forEach(link => {
+            if (link.href.includes(`${activePage}`)) {
+                link.classList.add('active');
+            }
+            else {
+                link.classList.remove('active');
+            }
+        })
+    </script>
+    <!-- End of Script for navbar active buttons -->
+
+
+    <!-- Script for navbar scrolling effects -->
+
+    <script>
+        window.addEventListener('scroll', function () {
+            let header = document.querySelector('nav');
+            let windowPosition = window.scrollY > 0;
+            header.classList.toggle('scrolling-active', windowPosition);
+        })
+    </script>
+
+    <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel">
+        <div class="carousel-indicators">
+            <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active"
+                aria-current="true" aria-label="Slide 1"></button>
+            <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1"
+                aria-label="Slide 2"></button>
+            <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2"
+                aria-label="Slide 3"></button>
+        </div>
+        
+        <div class="carousel-inner">
+            <div class="carousel-item carousel-item-1 active">
+                <div class="container">
+                    <div class="carousel-caption text-start">
+                        <h1 class="fw-bold display-4">Best Stainless Steel Products</h1>
+                        <div class="button">
+                            <a class="btn btn-light my-4 text-uppercase" href="/products.html">Explore Designs </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="carousel-item carousel-item-2">
+                <div class="container">
+                    <div class="carousel-caption text-center">
+                        <h1 class="fw-bold display-4"> Premium Quality </h1>
+                        <div class="button">
+                            <a class="btn btn-light my-4 text-uppercase" href="/products.html">Explore Designs</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="carousel-item carousel-item-3">
+                <div class="container">
+                    <div class="carousel-caption text-end">
+                        <h1 class="fw-bold display-4"> Contains a wide variety of Designs </h1>
+                        <div class="button">
+                            <a class="btn btn-light my-4 text-uppercase" href="/products.html">Explore Designs</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+        </button>
+    </div>
+    
+    <!-- Our Specialities -->
+    
+    
+    <div class="container-fluid mt-5 ">
+        <div class="container specialities-heading">
+            <h1 class="display-2 text-center fw-bold "> Why Choose Us? </h1>
+        </div>
+    </div>
+    
+    
+    <div class="container-fluid specialities-container-fluid">
+        <div class="container specialities-container py-5">
+            <div class="specialities row g-5 gallery row-cols-1 row-cols-sm-2 row-cols-md-2">
+                <div class="col p-4">
+                    <div class="card-text text-center">
+                        <h2 class="fw-bold"> Beyond Compare </h2>
+                        <p class="mt-3">Gives you the best price all over the market.</p>
+                    </div>
+                </div>
+                <div class="col p-4">
+                    <div class="card-text text-center">
+                        <h2 class="fw-bold"> Availability for you </h2>
+                        <p class="mt-3"> Always available for you 24x7.Feel free to meet anytime.</p>
+                    </div>
+                </div>
+                <div class="col p-4">
+                    <div class="card-text text-center">
+                        <h2 class="fw-bold"> Premium Designs </h2>
+                        <p class="mt-3"> Best quality designs that removes your headache.</p>
+                    </div>
+                </div>
+                <div class="col p-4">
+                    <div class="card-text text-center">
+                        <h2 class="fw-bold"> Top-notch Service </h2>
+                        <p class="mt-3"> Be there to listen your queries even after work is done.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    
+    
+    <!-- Animated Work  -->
+    
+    
+    
+    <div class="animation container-fluid text-center my-5 text-white number-animation-data" style="background:rgb(22,22,22)">
+        <div class="container-xxl py-5">
+            <div class="row row-cols-2 row-cols-sm-2 row-cols-md-2 row-cols-lg-4">
+                <div class="col p-4">
+                    <i class="fa fa-line-chart fa-2x text-center"></i>
+                    <h2 class="counter-numbers pt-4 text-center" data-number="9850">10k +</h2>
+                    <p> Projects Completed </p>
+                </div>
+                <div class="col p-4">
+                    <i class="fa fa-users fa-2x text-center"></i>
+                    <h2 class="counter-numbers pt-4 text-center" data-number="550">10k +</h2>
+                    <p> Happy Customers </p>
+                </div>
+                <div class="col p-4">
+                    <i class="fa fa-calendar fa-2x text-center"></i>
+                    <h2 class="counter-numbers pt-4 text-center" data-number="40">40 +</h2>
+                    <p> Years Experience </p>
+                </div>
+                <div class="col p-4">
+                    <i class="fa-solid fa-compass-drafting fa-2x"></i>
+                    <h2 class="counter-numbers pt-4 text-center" data-number="400">450 +</h2>
+                    <p> Premium Designs</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    
+    
+    <!-- Featurette  -->
+    
+    <div class="container-fluid featurette-container-fluid">
+        <h1 class="display-2 text-center fw-bold mt-5 mb-5 pt-5"> Our Services Includes </h1>
+        <div class="container-xxl featurette-container px-0">
+            <div class="row featurette p-2">
+                <div class="col-md-7">
+                    <h2 class="featurette-heading fw-bold display-5"> Stainless Steel Gates </h2>
+                    <p class="lead">Includes all type of SS Gates. It has grades 202, 304 and highly used brands Jindal and JNB.</p>
+                    <div class="button mb-2">
+                        <a href="/ss_gates.html" class="btn btn-outline-dark"> Explore </a>
+                    </div>
+                </div>
+                <div class="col-md-5 px-0">
+                    <img src="/images/gates/3.jpg" class="img-fluid" style="width:100%" alt="...">
+                </div>
+            </div>
+    
+            <div class="row featurette p-2">
+                <div class="col-md-7 order-md-2">
+                    <h2 class="featurette-heading fw-bold display-5">Stainless Steel Balcony Railings </h2>
+                    <p class="lead">It has grades 202, 304 and highly used brands Jindal and JNB. It is of two types square (chakor) and circle (gol).</p>
+                    <div class="button mb-2">
+                        <a href="/ss_front_railings.html" class="btn btn-outline-dark"> Explore </a>
+                    </div>
+                </div>
+                <div class="col-md-5 order-md-1 px-0">
+                    <img src="/images/front_railings/7.jpg" class="img-fluid" alt="...">
+                </div>
+            </div>
+    
+    
+            <div class="row featurette p-2">
+                <div class="col-md-7">
+                    <h2 class="featurette-heading fw-bold display-5">Stainless Steel Staircase Railings </h2>
+                    <p class="lead">It has grades 202, 304 and highly used brands Jindal and JNB. It is of two types square (chakor) and circle (gol).</p>
+                    <div class="button mb-2">
+                        <a href="/ss_stairs_railings.html" class="btn btn-outline-dark"> Explore </a>
+                    </div>
+                </div>
+                <div class="col-md-5 px-0">
+                    <img src="/images/stairs_railings/9.jpg" class="img-fluid" alt="...">
+                </div>
+            </div>
+    
+    
+            <div class="row featurette p-2">
+                <div class="col-md-7 order-md-2">
+                    <h2 class="featurette-heading fw-bold display-5">Stainless Steel Doors</h2>
+                    <p class="lead">These are single doors (palle) mostly used in house interiors.It has grades 202, 304 and highly used brands Jindal and JNB. </p>
+                    <div class="button mb-2">
+                        <a href="/Products/ss_doors.html" class="btn btn-outline-dark"> Explore </a>
+                    </div>
+                </div>
+                <div class="col-md-5 order-md-1 px-0">
+                    <img src="/images/doors/others.jfif" class="img-fluid" alt="...">
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    
+    <!-- Customer Reviews -->
+    
+    
+    <div class="container-fluid">
+        <div class="container customer-heading py-3">
+            <h1 class="display-2 text-center fw-bold"> Satisfied Customers </h1>
+        </div>
+    </div>
+    
+    
+    <div class="container-fluid customer-container-fluid">
+        <div class="container customer-container">
+            <div class="customer row g-5 gallery row-cols-1 row-cols-sm-2 row-cols-md-2">
+                <div class="col p-3">
+                    <div class="card d-flex align-items-center text-center" style="background:rgb(248, 248, 248)">
+                        <img src="/images/customer.png" alt="">
+                        <div class="card-text">
+                            <p class="mt-5">The best shop in the market having quality of designs and lots of work
+                                experience. Loved the way you worked.</p>
+                            <h5> - Nikhil Jangra </h5>
+                        </div>
+                    </div>
+                </div>
+    
+                <div class="col p-3">
+                    <div class="card d-flex align-items-center text-center" style="background:rgb(248, 248, 248)">
+                        <img src="/images/customer.png" alt="">
+                        <div class="card-text">
+                            <p class="mt-5">The owner Mr. Rajesh who showed me lots of designs and tells me its pros and
+                                cons for better understanding. Awesome person and work too.</p>
+                            <h5> - Mukesh Kumar </h5>
+                        </div>
+                    </div>
+                </div>
+    
+                <div class="col p-3">
+                    <div class="card d-flex align-items-center text-center" style="background:rgb(248, 248, 248)">
+                        <img src="/images/customer.png" alt="">
+                        <div class="card-text">
+                            <p class="mt-5">Got very reasonable price as compared to the market. They hav'nt taken long
+                                and done really good work.</p>
+                            <h5> - Varun Ravalia </h5>
+                        </div>
+                    </div>
+                </div>
+    
+                <div class="col p-3">
+                    <div class="card d-flex align-items-center text-center" style="background:rgb(248, 248, 248)">
+                        <img src="/images/customer.png" alt="">
+                        <div class="card-text">
+                            <p class="mt-5"> Really good and fast service. I've Fixed a meeting in one call and placed a
+                                order next day. The work is lovely and done quickly. </p>
+                            <h5> - Praful </h5>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="container text-center pb-5">
+                <div class="button google-reviews">
+                    <a href="https://www.google.com/search?q=aakash+steel+works&tbm=lcl&sxsrf=ALiCzsZTE4A4E1bFxTUu0_1jAhFH815giA%3A1651993887478&ei=H213YtPzHNaTseMPoKC6mA0&oq=aakash+steel+works&gs_l=psy-ab.3..35i39k1j0i512k1.119203.119408.0.119662.2.2.0.0.0.0.222.222.2-1.1.0....0...1c.1.64.psy-ab..1.1.221....0.bAAbsUWAWVU#lrd=0x390d0fe5f31b8c93:0x9336ab23da57cc30,1,,,&rlfi=hd:;si:10607854142793174064,l,ChJhYWthc2ggc3RlZWwgd29ya3NIy8y3_fKugIAIWiAQABABEAIYABgBGAIiEmFha2FzaCBzdGVlbCB3b3Jrc5IBFnN0ZWVsd29ya19tYW51ZmFjdHVyZXKaASNDaFpEU1VoTk1HOW5TMFZKUTBGblNVUnBkVTl4UmxkM0VBRQ;mv:[[28.715201,77.1443723],[28.499919,76.9221031]]"
+                        class="btn btn-xxl btn-outline-dark" style="border-radius:0px;" target="_blank"> Read
+                        More Google reviews &nbsp<i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Optional JavaScript; choose one of the two! -->
+
+    <!-- Option 1: Bootstrap Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+
+    <!-- Option 2: Separate Popper and Bootstrap JS -->
+    <!--
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js" integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js" integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13" crossorigin="anonymous"></script>
+    -->
+  </body>
+
+  <!-- Footer -->
+
+<footer>
+    <div class="container-fluid help d-flex justify-content-center align-items-center text-white"
+        style="background:rgb(30,30,30); height:6rem">
+        <h5>Need help? Give us a call at &nbsp<strong> 93192 50020 </strong> &nbsp We'll chat — or get back to you as soon as we can.</h5>
+    </div>
+
+    <div class="container-fluid footer-container-fluid text-white" style="background:#000">
+        <div class="container px-4 py-5" id="featured-3">
+            <div class="d-flex justify-content-between flex-wrap align-content-start">
+                <h2 class="pb-2"> We would love taking your feedback... </h2>
+                <div class="button">
+                    <a class="mx-2 queries btn btn-light" href="/contact-us.html"> Contact Us&nbsp
+                        <span><i class="fa-solid fa-arrow-right-long"></i></span>
+                    </a>
+                </div>
+            </div>
+            
+            <hr>
+            <div class="row g-4 py-5 row-cols-1 row-cols-lg-3">
+                <div class="feature col">
+                    <h2><img class="logo" src="/images/symbol.png" width="60" alt="">Akash Steel Works </h2>
+                    <p> We are Akash Steel Works India's leading <br> Stainless Steel Shop with <span> 40+ Years
+                    </span> <br> of experience in the field.</p>
+                </div>
+                <div class="feature col">
+                    <h2> Address </h2>
+                    <p> Najafgarh Road, Near Smart Mega Mart,<br> Bahadurgarh, Haryana. <br> Contact : (+91) 9319250020
+                        <br>
+                        Gmail : akashsteelworks1976@gmail.com
+                    </p>
+                </div>
+                <div class="feature col community-icons">
+                    <h2> Support Us </h2>
+                    <p> Always be in touch with us by following us on our social media handles &nbsp&nbsp
+                        <i class="fa-solid fa-arrow-down-long"></i></p>
+                    <a href="https://wwww.facebook.com"><i class="fab fa-facebook fa-2x"></i></a>
+                    <a href="https://www.instagram.com"><i class="fab fa-instagram fa-2x"></i></a>
+                    <a href="https://www.twitter.com"><i class="fab fa-twitter fa-2x"></i></a>
+                    <a href="https://www.linkedin.com"><i class="fab fa-linkedin fa-2x"></i></a>
+                </div>
+                
+            </div>
+            <hr>
+
+            <div>
+                <p class="pt-3 text-center">&copy Copyright 2022 Akash Steel Works. All rights reserved.</p>
+            </div>
+        </div>
+    </div>
+</footer>
+</html>

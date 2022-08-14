@@ -1,0 +1,167 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Lobster&family=Montserrat:ital,wght@0,300;0,400;0,500;0,600;1,300;1,400;1,500');
+
+
+*{
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+
+.carousel-item-1{
+    background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url(/images/stairs_railings/51.jpg);
+    height: 100vh;
+    background-size: 100% 100%;
+}
+
+.carousel-item-2{
+    background: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)), url(/images/stairs_railings/45.jpg);
+    height: 100vh;
+    background-size: 100% 100%;
+}
+
+.carousel-item-3{
+    background: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)), url(/images/stairs_railings/40.jpg);
+    height: 100vh;
+    background-size: 100% 100%
+}
+
+.carousel-caption h1{
+    letter-spacing: 0.04rem;
+    font-family: gd-sage,"Times","Times New Roman",serif;
+
+}
+
+.animation p{
+    letter-spacing: 0.05rem;
+    font-size: 1.1rem;
+}
+
+/* ===================== specialities ========================= */
+
+.specialities-container-fluid p{
+    letter-spacing: 0.03rem;
+}
+
+.specialities-container-fluid{
+    background-color: rgb(248, 248, 248);
+    margin: 4rem 0;
+}
+
+.specialities-container-fluid h2{
+    font-family: gd-sage,"Times","Times New Roman",serif;
+
+}
+
+.specialities-heading h1{
+    font-family: gd-sage,"Times","Times New Roman",serif;
+    margin-top: 4rem;
+}
+
+/* ========================== Featurette ============================= */
+
+
+.featurette{
+    margin: 6rem 0;
+    background-color: rgb(248,248,248);
+}
+
+.featurette-container-fluid h1{
+    font-family: gd-sage,"Times","Times New Roman",serif;
+}
+
+.featurette img{
+    width: 100%;
+}
+
+
+.featurette img:hover{
+    cursor: pointer;
+}
+
+.featurette:hover{
+    cursor: pointer;
+    box-shadow: 0 0 15px rgb(0,0,0,.2);
+    transition: all 0.3s linear;
+    transform: scale(1.01);
+}
+
+.featurette h2{
+    font-family: gd-sage,"Times","Times New Roman",serif;
+}
+
+/* =================== Customer Reviews ========================== */
+
+
+.card{
+    border: none;
+}
+.customer-container-fluid,
+.customer-container-fluid .card-text,
+.customer-container-fluid img{
+    background-color: rgb(248, 248, 248);
+}
+
+.customer-heading h1{
+    font-family: gd-sage,"Times","Times New Roman",serif;    
+}
+
+.customer-container-fluid{
+    margin: 6rem 0;
+}
+
+.customer-container-fluid h1{
+    padding: 6rem 0 5rem 0;
+}
+
+.customer{
+    padding: 0 0 6rem 0;
+}
+
+.customer-container .card img{
+    width: 3vw;
+}
+
+
+/* ==================================== Media Queries ====================================== */
+
+@media (max-width:992px){
+    .featurette .featurette-heading{
+        font-size: 2rem;
+    }
+    .featurette .lead{
+        font-size: 1rem;
+    }
+    .button a{
+        font-size: 12px;
+        padding: 8px 10px;
+    }
+}
+
+
+@media (max-width:767px){
+    .featurette .featurette-heading{
+        font-size: 3rem;
+    }
+    .featurette .lead{
+        font-size: 1.2rem;
+    }
+    .button a{
+        font-size: 15px;
+        padding: 12px 32px;
+    }
+}
+
+
+@media (max-width:400px){
+    .button a{
+        font-size: 12px;
+        padding: 8px 10px;
+    }
+
+    .featurette .featurette-heading{
+        font-size: 2rem;
+    }
+    .featurette .lead{
+        font-size: 1rem;
+    }
+}

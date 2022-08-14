@@ -1,0 +1,53 @@
+*{
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+#required-field{
+    color: red;
+}
+
+
+.carousel-item{
+    background: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)), url(/images/contact.jpg);
+    height: 100vh;
+    background-size: 100% 100%;
+}
+
+.contact{
+    font-family: gd-sage,"Times","Times New Roman",serif;
+    letter-spacing: 0.05rem;
+}
+
+.btn-outline-primary{
+    font-size: 20px;
+    letter-spacing: 0.1rem
+}
+
+.btn-outline-primary:hover{
+    transition: all 0.2s linear; 
+    letter-spacing: 0.3rem;
+}
+
+.map{
+    background-attachment: center;
+}
+
+.contact-details p{
+    font-family: gd-sage,"Times","Times New Roman",serif;
+    font-weight: bolder;
+}
+
+.project h2{
+    font-family: gd-sage,"Times","Times New Roman",serif;
+}
+
+
+/* ============================== Media Queries ================================ */
+
+
+@media (max-width:400px){
+    .submit-button button{
+        font-size: 12px;
+        padding: 8px 10px;
+    }
+}

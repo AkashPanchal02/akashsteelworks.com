@@ -1,0 +1,87 @@
+
+/* ============================ Contact Us button in navbar ==================================== */
+
+:root{
+    --tran : all 0.2s linear
+}
+
+ 
+button{
+    background-color: hsl(206, 21%, 94%);
+}
+
+.button a{
+    letter-spacing: 0.2rem;
+    text-transform: uppercase;
+    text-decoration: none;
+    padding: 12px 32px;
+    /* border: 1px solid #000; */
+    color: #000;
+    position: relative;
+    transition: var(--tran);
+    z-index: 1;
+    overflow: hidden;
+}
+
+.button a:hover{
+    color: #fff;
+    font-size: 16.5px;
+
+}
+
+.button a::before{
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #000;
+    transform: translateX(-100%);
+    transition: var(--tran);
+}
+
+.button a:hover:before{
+    transform: translateX(0);
+    z-index: -1;
+}
+
+
+/* ========================= Submit Button =============================== */
+
+:root{
+    --tran : all 0.2s linear
+}
+
+.submit-button button{
+    letter-spacing: 0.2rem;
+    text-transform: uppercase;
+    text-decoration: none;
+    padding: 8px 20px ;
+    border: 1px solid #0d6efd;
+    position: relative;
+    transition: var(--tran);
+    z-index: 1;
+    overflow: hidden;
+}
+
+.submit-button button:hover{
+    color: #fff;
+}
+
+.submit-button button::before{
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #0d6efd;
+    transform: translateX(-100%);
+    transition: var(--tran);
+}
+
+.submit-button button:hover:before{
+    transform: translateX(0);
+    z-index: -1;
+}
